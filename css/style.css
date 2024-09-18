@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #333; /* Main text color or primary branding color */
+  --secondary-color: #555; /* Secondary text or element color */
+  --accent-color: #4CAF50; /* Accent color for buttons or links */
+  --accent-color-hover: #45a049; /* Darker shade for hover effect */
+  --background-color: #f9f9f9; /* Background color */
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -71,7 +79,7 @@ nav ul.tabs li a {
 
 nav ul.tabs li a:hover,
 nav ul.tabs li a.active {
-  background-color: #555; /* Highlight active and hovered tabs */
+  color: #555; /* Highlight active and hovered tabs */
 }
 
 .tab-content {
@@ -277,40 +285,63 @@ tr:hover {
   border-radius: 8px; /* Rounded corners for a softer look */
 }
 
-/* Heading styles */
-#donate h2 {
-  color: #333;
-  font-size: 2em;
-  margin-bottom: 10px;
+.donate-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Paragraph styles */
-#donate p {
-  color: #555;
+.donate-image {
+  flex: 1;
+  overflow: hidden;
+  margin-right: 40px;
+}
+
+.donate-image img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.donate-image img:hover {
+  transform: scale(1.05);
+}
+
+.donate-content {
+  flex: 1;
+  text-align: right;
+}
+
+.donate-content h2 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.donate-content p {
   font-size: 1.2em;
+  color: var(--secondary-color);
   line-height: 1.6;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
-/* Button styles */
 .donate-button {
   display: inline-block;
   padding: 15px 30px;
   font-size: 1.2em;
   color: #fff;
-  background-color: #4CAF50; /* Primary button color */
+  background-color: var(--accent-color);
   border: none;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Button hover effects */
 .donate-button:hover {
-  background-color: #45a049; /* Darker shade on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: var(--accent-color-hover);
+  transform: scale(1.05);
 }
-
 
 /* Staff Tab Styles */
 #staff {
