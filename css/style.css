@@ -17,7 +17,7 @@ main {
 header {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding:10px;
   background-color: #333;
   color: #fff;
 
@@ -30,20 +30,22 @@ nav {
 }
 
 .logo-container {
-  margin-right: 20px;
+  margin-right: 100px;
+  
 }
 
 .header-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin-left: 100px;
-  flex: 1;
+  margin-left: 10px;
+  
 }
 header h1 {
-  margin: 0 0 35px 0;
+  margin-left: 30px;
+  margin-right: 100px;
   font-family: 'Roboto', sans-serif; /* Use the selected Google Font */
-  font-size: 3rem; /* Adjust size as needed */
+  font-size: 2rem; /* Adjust size as needed */
   font-weight: bold; /* Adjust weight for emphasis */
   line-height: 1.2; /* Improve readability */
 }
@@ -53,19 +55,17 @@ nav ul.tabs {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: flex-start; /* Center the tabs horizontally */
 }
 
 nav ul.tabs li {
-  margin: 0 15px;
+  margin: 0 0;
 }
 
 nav ul.tabs li a {
   color: #fff;
   text-decoration: none;
   padding: 15px 30px;
-  border-radius: 8px;
-  background-color: #444;
+  background-color: #333;
   font-size: 1.2rem;
 }
 
@@ -78,7 +78,7 @@ nav ul.tabs li a.active {
   display: none;
   padding: 20px;
   background-color: #fff;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .tab-content.active {
